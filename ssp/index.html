@@ -1,0 +1,74 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+<style type="text/css">
+	* {
+		margin: 0;
+		padding: 0;
+	 }
+ /* #music{
+            border-radius: 20px;-webkit-border-radius:20px;-moz-border-radius:20px;
+            position:absolute;
+            right: 15px;
+            bottom: 1px;
+            
+} */
+ #music{
+        border-radius: 15px;-webkit-border-radius:15px;
+        -moz-border-radius:15px;
+        position:absolute;
+        right: 1%;
+        top: 1%;
+            
+}
+html,body,iframe{max-height:100vh;overflow:hidden;}
+</style>
+<script type="text/javascript" src="./js/jquery-1.11.1.js"></script>
+<script type="text/javascript"
+	src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+	 
+
+
+
+
+</head>
+<body onload="IFrameResize()" scroll="no">
+<script>
+function IFrameResize(){
+var obj = parent.document.getElementById("childFrame"); 
+obj.height = this.document.body.scrollHeight;
+}
+</script>
+
+<iframe border=0 marginWidth=0 frameSpacing=0 marginHeight=0 src="one-02.html" frameBorder=0 noResize scrolling="yes" width=100%  vspale="0" id="childFrame">
+</iframe>
+<script type="text/javascript" language="javascript">  
+</script>   
+<img src="./images/k.png" width="8%" id="music"/> 
+<div style="display:none;">
+<audio id="musicid" src="./media/audio.mp3" preload="preload"   loop="loop" autoplay></audio>
+</div>
+<script type="text/javascript">
+    var audio = document.getElementById('musicid');
+    $('#music').click(function(){
+        event.stopPropagation();
+        if(audio.paused) 
+        {
+            $('#music').attr("src","./images/k.png");
+            audio.play();
+            return;
+        }
+        $('#music').attr("src","./images/s.png");
+        audio.pause(); 
+
+    });
+</script>
+<script type="text/javascript" src="./js/jrbf.js"></script>
+<script src="wx/uploadPicture.js" type="text/javascript"></script>
+</body>
+	
+</html>

@@ -1,0 +1,113 @@
+﻿@charset "utf-8";
+*{
+	margin:0;
+	padding:0;
+}
+#wrap{
+	background:url(../images/background_border_11.jpg);
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	width:100%;
+	min-height: 640px;
+}
+#bt1,
+#bt2{
+	width: 29%;
+}
+#bt1{
+     height: 35px;
+     background: rgba(0,0,0,0);
+     border: 1px solid #663366;
+     color: #663366;
+     font-size: 13px;
+     
+}
+#bt2{
+     height: 35px;
+     background: rgba(0,0,0,0);
+     border: 1px solid #663366;
+     color: #663366;
+     margin-left: 25px;
+     font-size: 13px;
+}
+#wrap_btn{
+	margin-bottom: 20px;
+}
+a{
+	text-decoration: none;
+}
+
+#btn3-1,
+#btn3-2,
+#btn3-3{
+	height: 45px;
+	width: 64%;
+	border: none;
+	color: #663366;
+	font-family: 思源黑体 CN;
+	font-size: 16px;
+	border:1px solid #333333;
+	background:rgba(0,0,0,0);
+	font-size: 16px;
+	padding-left:40px;
+	margin-top: 15px;
+	background-size:100% 100%;
+
+}
+#btn3-1{
+	margin-top: 10%;
+	background:rgba(0,0,0,0) url(../images/name.png) 16px center no-repeat;
+	background-size: 18px;
+}
+#btn3-2{
+	background:rgba(0,0,0,0) url(../images/phone.png) 20px center no-repeat;
+	background-size: 11px;
+}
+#btn3-3{
+	background:rgba(0,0,0,0) url(../images/pen.png) 17px center no-repeat;
+	background-size: 22px;
+}
+#id1 {position:relative; 
+	  top:0; 
+	  left:0;
+	  width:270px;
+	  display:block;}
+#id2 {
+	position:relative;
+	
+	  top:-30px;
+	  left:0;
+	  width:240px;
+	  }
+#center_btn{
+	margin-top: 230px;
+}
+#btn3_1{
+	font-size: 13px;
+	border: none;
+	border:1px solid #333;
+	background: rgba(0,0,0,0);
+	width: 33%;
+	height: 40px;
+    color: #663366;
+}
+#btn3_2{
+	font-size: 13px;
+	border: none;
+	background: rgba(0,0,0,0);
+	border:1px solid #333;
+	width: 33%;
+	height: 40px;
+    color: #663366;
+    margin-left:20px;
+}
+#center_btn{
+	position: relative;
+	left: 0;
+	top: -240px;
+}
+#foot_img{
+	position: relative;
+	left: 0;
+	top: -185px;
+}
